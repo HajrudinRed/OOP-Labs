@@ -91,6 +91,16 @@ public class Lab2 {
         drawInvertedStarsPiramid(5);
         drawInvertedStarsPiramid(10);
         //9.
+        drawNumbersPiramid(5);
+        drawNumbersPiramid(10);
+        //9.2
+        drawRepeatingNumbersPiramid(5);
+        drawRepeatingNumbersPiramid(10);
+        //10.
+        int CorrectGuess = 70;
+        System.out.println("Guess a Number: ");
+        int Guess =Integer.parseInt(reader.nextLine());
+
 
 
     }
@@ -144,7 +154,7 @@ public class Lab2 {
         while(r<=rows){
             int t =1;
             while(t<=r){
-                System.out.print("* ");
+                System.out.print(t);
                 t++;
             }
             System.out.println();
@@ -154,9 +164,23 @@ public class Lab2 {
         System.out.println();
 
     }
+    //9.2
+    public static void drawRepeatingNumbersPiramid(int rows){
+        int r=1;
+        while(r<=rows){
+            int t =1;
+            while(t<=r){
+                System.out.print(r);
+                t++;
+            }
+            System.out.println();
+            r++;
+        }
 
+        System.out.println();
 
-
+    }
+    //10.
 
 
 
